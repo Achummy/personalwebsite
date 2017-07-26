@@ -25,7 +25,7 @@ SECRET_KEY = '=13g4*3%cnkmw)%(k5y*thry4*)#ol^^=vu)8i+4k2=bu(zd+('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','www.alexanderchum.com']
+ALLOWED_HOSTS = ['127.0.0.1','www.alexanderchum.com','alexanderchum.com']
 
 
 # Application definition
