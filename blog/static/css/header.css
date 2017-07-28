@@ -1,7 +1,47 @@
-@font-face { font-family: abeat; src: url('abeatbyKaiRegular.otf'); }
+@font-face { font-family: Abeat; src: url('abeatbyKaiRegular.otf'); }
 @font-face { font-family: Roboto; src: url('https://fonts.googleapis.com/css?family=Roboto'); }
 
-
 * {
-  font-family: abeat, Roboto, Helvetica, sans-serif;
+  font-family: Abeat, Roboto, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  height: 75vh;
+}
+
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin-left: 7vw;
+  padding-top: 5vh;
+  font-size: 3em;
+  text-align: left;
+  line-height: 95%;
+}
+
+.navbar {
+  min-width: 100%;
+  margin-left: 2vw;
+  padding-top: 6vh;
+  font-size: 1.7em;
+  word-spacing: 1vw;
+}
+
+.container {
+  display: flex;
 }

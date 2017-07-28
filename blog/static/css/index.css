@@ -1,0 +1,15 @@
+.title {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 20vh;
+}
+
+.title h1 {
+  font-size: 5em;
+}
+
+.title h2 {
+  min-width: 315px;
+  font-size: 2.5em;
+}

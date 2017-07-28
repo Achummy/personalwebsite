@@ -7,6 +7,9 @@ def index(request):
 def about(request):
     return render(request, 'blog/about.html', {})
 
+def portfolio(request):
+    return render(request, 'blog/portfolio.html', {})
+
 def blog(request):
     return render(request, 'blog/blog.html', {})
 
@@ -15,3 +18,6 @@ def design_post(request):
 
 def lifestyle_post(request):
     return render(request, 'blog/lifestyle_post.html', {})
+
+def contact(request):
+    return render(request, 'blog/contact.html', {})
