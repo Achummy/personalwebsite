@@ -2,14 +2,17 @@
   height: 100%;
   width: 100%;
   text-align: center;
-  padding: 20vh;
+  padding: 12vh 10vw;
 }
 
 .title h1 {
-  font-size: 5em;
+  font-size: 4em;
+  color: #0086FF;
+  color: rgb(0, 134, 255);
+  color: hsl(209, 100, 50);
 }
 
 .title h2 {
-  min-width: 315px;
-  font-size: 2.5em;
+  min-width: 335px;
+  font-size: 2em;
 }
