@@ -28,8 +28,8 @@ a {
 
 .name {
   float: left;
-  width: 34%;
-  padding: 2em 4%;
+  width: 32%;
+  padding: 2em 2%;
 /*  padding-right: 3em;
 */  text-align: left;
 }
@@ -41,9 +41,9 @@ a {
 
 .navbar {
   float: right;
-  width: 66%;
+  width: 68%;
   padding-top: 2em;
-  padding-left: 1em;
+  padding-left: 1.1%;
   line-height: 250%;
   word-spacing: 1.1vw;
 }
