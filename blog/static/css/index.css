@@ -7,8 +7,11 @@
 
 .title h1 {
   font-size: 4em;
-  color: #0086FF;
+/*  color: #0086FF;
   color: rgb(0, 134, 255);
+  color: hsl(209, 100, 50);*/
+  color: #0084FF;
+  color: rgb(0, 132, 255);
   color: hsl(209, 100, 50);
 }
 

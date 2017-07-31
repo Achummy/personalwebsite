@@ -7,10 +7,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 .container {
 	margin: auto;
 	width: 82%;
@@ -44,4 +40,20 @@ a {
 
 .life_style:hover {
 	background-image: url('../images/lifestylebannerhover.svg');
+}
+
+.game_design, .life_style a {
+  text-decoration: none;
+}
+
+.game_design, .life_style a:visited {
+  text-decoration: none;
+}
+
+.game_design, .life_style a:hover {
+  text-decoration: none;
+}
+
+.game_design, .life_style a:active {
+  text-decoration: none;
 }
