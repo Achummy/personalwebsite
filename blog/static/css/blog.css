@@ -1,12 +1,21 @@
+@font-face { font-family: Abeat; src: url('abeatbyKaiRegular.otf'); }
+@font-face { font-family: Roboto; src: url('https://fonts.googleapis.com/css?family=Roboto'); }
+
+* {
+  font-family: Abeat, Roboto, Helvetica, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
 	margin: auto;
 	width: 82%;
 	height: 100%;
 }
-
-/*.container img {
-	padding-top: 2em;
-}*/
 
 .game_design, .life_style {
 	display: block;
