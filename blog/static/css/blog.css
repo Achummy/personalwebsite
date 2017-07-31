@@ -1,0 +1,38 @@
+.container {
+	margin: auto;
+	width: 82%;
+	height: 100%;
+}
+
+/*.container img {
+	padding-top: 2em;
+}*/
+
+.game_design, .life_style {
+	display: block;
+	margin-top: 2em;
+	width: 100%;
+	height: 16.7vw;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+.game_design {
+	background-position: 50% 50%;
+	background-image: url('../images/gamedesignbanner.svg');
+}
+
+.life_style {
+	background-position: 50% 0%;
+	background-image: url('../images/lifestylebanner.svg');
+}
+
+.game_design:hover {
+	background-image: url('../images/gamedesignbannerhover.svg');
+}
+
+.life_style:hover {
+	background-image: url('../images/lifestylebannerhover.svg');
+}
