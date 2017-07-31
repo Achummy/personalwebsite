@@ -1,5 +1,13 @@
-@font-face { font-family: abeatbyKai; src: url('abeatbyKaibyKaiRegular.otf'); }
-@font-face { font-family: Roboto; src: url('https://fonts.googleapis.com/css?family=Roboto'); }
+@font-face { 
+  font-family: 'abeatbyKai'; 
+  src: url('abeatbyKaibykairegular.otf') format('otf'), 
+  url('abeatbykairegular.woff2') format('woff2'),
+  url('abeatbykairegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { font-family: 'Roboto'; src: url('https://fonts.googleapis.com/css?family=Roboto'); }
 
 * {
   font-family: abeatbyKai, Roboto, Helvetica, sans-serif;
