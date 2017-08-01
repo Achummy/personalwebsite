@@ -1,1 +1,22 @@
 {% extends "blog/header.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<link href="{% static '/css/about.css' %}" rel="stylesheet" type="text/css">
+<div class='picture'>
+</div>
+<div class='description'>
+<!--   <ul>
+    <li>Chinese born Canadian</li>
+    <li>From Montreal, Quebec</li>
+    <li>Student at the University of Toronto</li>
+    <li>Majoring in Computer Science</li>
+    <li>Focus in computer vision + game design</li>
+    <li>Passionate about</li>
+  </ul> -->
+  <p>
+    I'm a student at the University of Toronto, majoring in Computer Science with a focus in computer vision and game design. Currently, I create educational games for high school topics.
+    </br>But really? I share knowledge and passion through virtual realms.  
+  </p>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+.picture {
+  display: block;
+  float: left;
+  width: 30%;
+  min-width: 300px;
+  min-height: 1px;
+}
+
+.description {
+  display: block;
+  float: right;
+  width: 70%;
+  height: 100%;
+  padding-left: 2em;
+  padding-right: 5%;
+  line-height: 150%;
+  margin-right: 2em;
+}
+
+/*.description li {
+  line-height: 160%;
+  font-size: 1.7em;
+  letter-spacing: 1em;
+}
+*/
+.description p {
+  font-size: 1.6em;
+  line-height: 160%;
+  letter-spacing: 0.03em;
+}
