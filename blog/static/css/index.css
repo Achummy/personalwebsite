@@ -6,10 +6,7 @@
 }
 
 .title h1 {
-  font-size: 4em;
-/*  color: #0086FF;
-  color: rgb(0, 134, 255);
-  color: hsl(209, 100, 50);*/
+  font-size: 3.6em;
   color: #0084FF;
   color: rgb(0, 132, 255);
   color: hsl(209, 100, 50);
@@ -17,5 +14,5 @@
 
 .title h2 {
   min-width: 335px;
-  font-size: 2em;
+  font-size: 1.6em;
 }

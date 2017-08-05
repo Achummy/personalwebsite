@@ -11,7 +11,8 @@
 
 * {
   font-family: AbeatbyKai, Roboto, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
+  line-height: 120%;
   box-sizing: border-box;
 }
 
@@ -25,7 +26,7 @@ a, a:visited, a:active {
   position: absolute;
   width: 90%;
   min-height: 120px;
-  margin-top: 1.3em;
+  margin-top: 1em;
   margin-left: 4vw;
   margin-right: 5vw;
   background-image: url('../images/headercurve.svg');
@@ -41,12 +42,12 @@ a, a:visited, a:active {
 .name {
   float: left;
   width: 31%;
-  padding: 2em 3%;
-/*  padding-right: 3em;*/
+  padding: 1.6em 3%;
   text-align: left;
 }
+
 .name a {
-  font-size: 2.7em;
+  font-size: 2.16em;
   float: right;
   line-height: 95%;
   color: #000000;
@@ -55,13 +56,13 @@ a, a:visited, a:active {
 .navbar {
   float: right;
   width: 69%;
-  padding-top: 2em;
-  line-height: 250%;
+  padding-top: 1.65em;
+  line-height: 200%;
   word-spacing: 1.1vw;
 }
 
 .navbar a {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #008AD5;
   color: rgb(0, 138, 213);
   color: hsl(203, 100, 42);
@@ -74,10 +75,10 @@ a, a:visited, a:active {
 
 @media screen and (max-width: 960px) {
   .name {
-    padding-top: 2.6em;
+    padding-top: 2.08em;
   }
   .name a {
-    font-size: 2.4em;
+    font-size: 1.92em;
   }
 }
 
@@ -87,7 +88,7 @@ a, a:visited, a:active {
     float: right;
     background-image: url('../images/headercurvemobile.svg');
     background-position: 0% 50%;
-    margin-top: 0.7em;
+    margin-top: 0.56em;
     margin-left: 28%;
   }
 }

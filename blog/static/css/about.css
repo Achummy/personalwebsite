@@ -11,33 +11,27 @@
   float: right;
   width: 70%;
   height: 100%;
-  padding-top: 2em;
-  padding-left: 2em;
+  padding-top: 1.6em;
+  padding-left: 1.6em;
   padding-right: 5%;
   line-height: 150%;
 }
 
-/*.description li {
-  line-height: 160%;
-  font-size: 1.7em;
-  letter-spacing: 1em;
-}
-*/
 .description p {
-  font-size: 1.6em;
+  font-size: 1.28em;
   line-height: 160%;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.025em;
 }
 
 .description i {
-  font-size: 2.2em;
+  font-size: 1.76em;
   color: #0077F7;
 }
 
 .description b {
-  font-size: 1.4em;
+  font-size: 1.1em;
 }
 .description a {
-  font-size: 1.3em;
+  font-size: 1em;
   color: #008AD5;
 }

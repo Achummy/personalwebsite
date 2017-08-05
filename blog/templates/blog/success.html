@@ -1,11 +1,14 @@
 {% extends "blog/header.html" %}
 {% load staticfiles %}
 
-{% block title %}Email Sent{% endblock %}
+{% block title %}Thank you!{% endblock %}
 
 {% block content %}
+<link href="{% static '/css/success.css' %}" rel="stylesheet" type="text/css">
 <div class='thankyou'>
-	Thank you for your message!<br>
-	I will contact you as soon as possible!
+  <h1>Thank you for your message!</h1>
+  <hr>
+  <h3>Enjoy your day!</h3>
+  <p>Don't forget to smile :)</p>
 </div>
 {% endblock %}

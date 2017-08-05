@@ -1,0 +1,15 @@
+.thankyou {
+	text-align: center;
+	width: 70%;
+	min-width: 440px;
+	height: 500px;
+	margin: auto;
+}
+
+.thankyou h1 {
+  font-size: 3em;
+}
+
+.thankyou h3 {
+  font-size: 2.5em;
+}
