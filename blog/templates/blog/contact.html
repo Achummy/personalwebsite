@@ -1,1 +1,26 @@
 {% extends "blog/header.html" %}
+{% load staticfiles %}
+
+{% block title %}Contact Alexander Chum{% endblock %}
+
+{% block content %}
+<link href="{% static '/css/contact.css' %}" rel="stylesheet" type="text/css">
+
+<!-- <div class="social">
+  <p>Reach me through my LinkedIn</p>
+</div> -->
+
+<form method="post" class="post-form">
+<h2>Contact me on <a href="https://linkedin.com/in/alexander-chum-62622811b" target="_blank">LinkedIn</a></br><hr>Or leave a message here!</h2>
+  {% csrf_token %}
+  <p><label for="id_email">Email*</label>
+    <input type="email" name="email" id="id_email" required /></p>
+  <p><label for="id_subject">Subject*</label>
+    <input id="id_subject" type="text" name="subject" maxlength="100" required /></p>
+  <p><label for="id_message">Message*</label>
+    <textarea name="message" id="id_message" required></textarea></p>
+  <div class="form-actions">
+  	<button class="button" type="submit">Send</button>
+  </div>
+</form>
+{% endblock %}
