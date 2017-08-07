@@ -1,25 +1,33 @@
 .picture {
   display: block;
   float: left;
-  width: 30%;
-  min-width: 300px;
-  min-height: 1px;
+  width: 35%;
+  padding-top: 1.5em;
+  padding-left: 4%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px hidden;
+  border-radius: 5px;
+  max-height: 590px;
 }
 
 .description {
   display: block;
   float: right;
-  width: 70%;
+  width: 65%;
   height: 100%;
-  padding-top: 1.6em;
-  padding-left: 1.6em;
-  padding-right: 5%;
-  line-height: 150%;
+  padding-top: 1.4em;
+  padding-left: 1.4em;
+  padding-right: 3%;
+  font-size: 1.4vw;
 }
 
 .description p {
   font-size: 1.28em;
-  line-height: 160%;
+  line-height: 150%;
   letter-spacing: 0.025em;
 }
 
@@ -29,7 +37,7 @@
 }
 
 .description b {
-  font-size: 1.1em;
+  font-size: 1.3em;
 }
 .description a {
   font-size: 1em;
