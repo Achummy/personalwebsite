@@ -1,0 +1,22 @@
+{% extends "games/header.html" %}
+{% load staticfiles %}
+
+{% block title %}Gravity Blop{% endblock %}
+
+{% block content %}
+    <link rel="shortcut icon" href="{% static 'gravityblop/TemplateData/favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'gravityblop/TemplateData/style.css' %}">
+    <script src="{% static 'gravityblop/TemplateData/UnityProgress.js' %}"></script>  
+    <script src="{% static 'gravityblop/Build/UnityLoader.js' %}"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "/static/gravityblop/Build/gravityblop.json", {onProgress: UnityProgress});
+    </script>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 1334px; height: 750px; border: medium solid black;"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">GravityBlop</div>
+      </div>
+    </div>
+{% endblock %}

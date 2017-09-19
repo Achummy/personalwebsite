@@ -5,10 +5,9 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^about/$', views.about, name='about'),
     url(r'^portfolio/$', views.portfolio, name='portfolio'),
-    url(r'^blog/design_post/$', views.design_post, name='design_post'),
-    url(r'^blog/lifestyle_post/$', views.lifestyle_post, name='lifestyle_post'),
-    url(r'^blog/$', views.blog, name='blog'),
+    url(r'^portfolio/(?P<title>[-\w]+)/$', views.project, name='project'),
+    url(r'^blog/(?P<title>[-\w]*)/$', views.blog, name='blog'),
+    url(r'^blog/post/(?P<title>[-\w]+)/$', views.post, name='post'),
     url(r'^contact/$', views.contact, name='contact'),
     url(r'^contact/success/$', views.success, name='success'),
-    url(r'^category/(?P<post_title>[\w\-]+)/$', views.post, name='post'),
 ]

@@ -24,7 +24,7 @@ img {
   padding-right: 3%;
 /*  font-size: 0.5em;
 */
-  font-size: 1.4vw;
+  font-size: 0.6em;
 }
 
 .description p {
@@ -46,8 +46,20 @@ img {
   color: #008AD5;
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (min-width: 768px) {
   .description {
-    font-size: 0.6em;
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .description {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .description {
+    font-size: 1.3em;
   }
 }

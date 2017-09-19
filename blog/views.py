@@ -14,16 +14,12 @@ def about(request):
 def portfolio(request):
     return render(request, 'blog/portfolio.html', {})
 
-def blog(request):
-	return render(request, 'blog/blog.html', {})
-
-def design_post(request):
-	posts = Post.objects.filter(published_date__lte=timezone.now()).filter(category="Design").order_by('published_date')
-	return render(request, 'blog/design_post.html', {'posts':posts})
-
-def lifestyle_post(request):
-	posts = Post.objects.filter(published_date__lte=timezone.now()).filter(category="Lifestyle").order_by('published_date')
-	return render(request, 'blog/lifestyle_post.html', {'posts':posts})
+def blog(request, title):
+	if title == 'design' or title == 'lifestyle':
+		posts = Post.objects.filter(published_date__lte=timezone.now()).filter(category=title).order_by('published_date')
+		return render(request, 'blog/generic_post.html', {'posts':posts, 'category':title})
+	else:
+		return render(request, 'blog/blog.html', {})
 
 def contact(request):
 	if request.method == 'GET':
@@ -41,15 +37,19 @@ def contact(request):
 			return redirect('success')
 	return render(request, 'blog/contact.html', {'form': form})
 
-def post(request, post_title):
+def post(request, title):
 	context_dict = {}
 	try:
-		posts = Post.objects.get(slug=post_title)
-		context_dict['post_title'] = posts.title
-		context_dict['posts'] = posts
+		post = Post.objects.all().get(slug=title)
+		context_dict['post'] = post
 	except Post.DoesNotExist:
 		pass
 	return render(request, 'blog/post.html', context_dict)
+
+def project(request, title):
+	title = title.replace('-','')
+	title = title.lower()
+	return render(request, "blog/{}.html".format(title), {})
 
 def success(request):
 	return render(request, 'blog/success.html', {})

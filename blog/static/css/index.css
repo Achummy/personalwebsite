@@ -3,16 +3,43 @@
   width: 100%;
   text-align: center;
   padding: 12vh 10vw;
+  font-size: 1.8em;
 }
 
 .title h1 {
-  font-size: 3.6em;
+  margin: 20px;
+  font-size: 2em;
   color: #0084FF;
   color: rgb(0, 132, 255);
   color: hsl(209, 100, 50);
 }
 
 .title h2 {
-  min-width: 335px;
-  font-size: 1.6em;
+  margin: auto;
+  min-width: 338px;
+  max-width: 338px;
+  font-size: 1.1em;
+}
+
+.title p {
+  line-height: 80%;
+  margin-top: 40px;
+  min-width: 400px;
+}
+
+.title i {
+  font-size: 1.2em;
+  color: rgb(255, 100, 0);
+}
+
+
+@media screen and (min-width: 768px) {
+  .title h2 {
+    max-width: 4000px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .title {
+    font-size: 2.5em;
+  }
 }

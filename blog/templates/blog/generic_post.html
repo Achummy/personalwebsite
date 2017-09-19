@@ -1,0 +1,20 @@
+{% extends "blog/header.html" %}
+{% load staticfiles %}
+
+{% block title %}Chum's {{category}} Blog{% endblock %}
+
+{% block content %}
+<link href="{% static '/css/generic_post.css' %}" rel="stylesheet" type="text/css">
+<div class='container row'>
+    {% for post in posts %}
+    <div class='posts col-8 col-m-8'>
+      <h1><a href="/blog/post/{{post.slug}}/" target="_self">{{post.title}}</a></h1>
+      <h5>published: {{post.published_date}}</h5>
+      <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+    <div class='collection col-4 col-m-4'>
+	</div>
+</div>
+
+{% endblock %}

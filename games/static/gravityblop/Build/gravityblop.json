@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "gravityblop.data.unityweb",
+"asmCodeUrl": "gravityblop.asm.code.unityweb",
+"asmMemoryUrl": "gravityblop.asm.memory.unityweb",
+"asmFrameworkUrl": "gravityblop.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>{% block title %}Alexander Chum{% endblock %}</title>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<!-- IF NEEDED THERE CAN BE A HEADER
+   <div class='header'>
+      <div class='navbar'>
+        <a href="/about/">ABOUT</a>
+        <a href="/portfolio/">PORTFOLIO</a>
+        <a href="https://github.com/Achummy/" target="_blank">GITHUB</a>
+        <a href="/blog/">BLOG</a>
+        <a href="/contact/">CONTACT</a>
+      </div>
+  </div> -->
+  <div class='content'>
+    {% block content %}
+    {% endblock %}
+  </div>
+</body>
+</html>

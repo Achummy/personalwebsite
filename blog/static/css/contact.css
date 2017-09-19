@@ -58,3 +58,12 @@
   color: white;
 }
 
+@media screen and (min-width: 1600px) {
+  .post-form, .button {
+    font-size: 1.5em;
+  }
+  .post-form p, textarea, input {
+    font-size: 1em;
+  }
+}
+

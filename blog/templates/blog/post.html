@@ -1,1 +1,20 @@
-href="/blog/{{ posts.slug }}"
+{% extends "blog/header.html" %}
+{% load staticfiles %}
+
+{% block title %}Chum's Post{% endblock %}
+
+{% block content %}
+<link href="{% static '/css/single_post.css' %}" rel="stylesheet" type="text/css">
+<div class='container'>
+	{% if post %}
+    <div>
+      <h1>{{post.title}}<h1>
+      <b>By: {{post.author}}</b>
+      <p><i>Published: {{post.published_date}}</i></p>
+      <p>{{ post.text }}</p>
+    </div>
+  {% else %}
+  	<p> no such post {{title}}</p>
+  {% endif %}
+</div>
+{% endblock %}

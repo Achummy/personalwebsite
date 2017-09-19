@@ -19,4 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^neverfindthis/', admin.site.urls),
     url(r'', include('blog.urls')),
+    url(r'^games/', include('games.urls')),
 ]
