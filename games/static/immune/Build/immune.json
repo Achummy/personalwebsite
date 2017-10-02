@@ -1,0 +1,9 @@
+{
+"TOTAL_MEMORY": 268435456,
+"dataUrl": "immune.data.unityweb",
+"asmCodeUrl": "immune.asm.code.unityweb",
+"asmMemoryUrl": "immune.asm.memory.unityweb",
+"asmFrameworkUrl": "immune.asm.framework.unityweb",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#222C36"
+}

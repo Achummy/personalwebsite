@@ -1,0 +1,22 @@
+{% extends "games/header.html" %}
+{% load staticfiles %}
+
+{% block title %}Immune{% endblock %}
+
+{% block content %}
+  <link rel="shortcut icon" href="{% static 'immune/TemplateData/favicon.ico' %}">
+  <link rel="stylesheet" href="{% static 'immune/TemplateData/style.css' %}">
+  <script src="{% static 'immune/TemplateData/UnityProgress.js' %}"></script>  
+  <script src="{% static 'immune/Build/UnityLoader.js' %}"></script>
+  <script>
+    var gameInstance = UnityLoader.instantiate("gameContainer", "/static/immune/Build/immune.json", {onProgress: UnityProgress});
+  </script>
+  <div class="webgl-content">
+    <div id="gameContainer" style="width: 1440px; height: 900px"></div>
+    <div class="footer">
+      <div class="webgl-logo"></div>
+      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+      <div class="title">Immune</div>
+    </div>
+  </div>
+{% endblock %}
